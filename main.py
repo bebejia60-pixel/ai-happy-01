@@ -13,4 +13,4 @@ with open(DST, "rb") as f:
     dst_head = f.read(8)
 assert src_head == dst_head == b"\x89PNG\r\n\x1a\n", "output is not a valid PNG"
 assert os.path.getsize(DST) == os.path.getsize(SRC), "output size differs from source"
-print(f"Wrote {DST} ({os.path.getsize(DST)} bytes)
+print(f"Wrote {DST} ({os.path.getsize(DST)} bytes)")
